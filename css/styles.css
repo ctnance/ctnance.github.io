@@ -20,12 +20,25 @@ ul {
     list-style: none;
     padding: 0;
     line-height: 2em;
+    margin: 0;
 }
 
+header, footer {
+    background-color: #28df99;
+}
+
+footer {
+    margin: 1em 0;
+    padding: 1em;
+}
 
 /* Custom Styles */
 
-.proj-info {
-    width: 50%;
-    margin: 2em auto;
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar li {
+    margin: 0 1em;
 }

@@ -1,0 +1,11 @@
+Color Pallette:
+
+https://colorhunt.co/palette/207326
+
+Dark Green: #28df99;
+
+Light Green: #99f3bd;
+
+Very Light Green: #d2f6c5;
+
+Yellow-Beige: #f6f7d4;
