@@ -4,6 +4,7 @@
 :root {
     --bg-color-dark: hsl(169, 12%, 10%);
     --bg-color-medium: hsl(169, 12%, 28%);
+    --bg-color-medium-trans: hsla(169, 12%, 28%, 0);
     --bg-color-green: hsl(165, 69%, 40%);
 }
 
@@ -156,14 +157,7 @@ a .icon:hover {
     font-size: 1.25rem;
     border-bottom: 1px solid hsl(169, 12%, 28%);
     margin: 0 auto .5em;
-}
-
-.section-header {
-    font-size: 2.5rem;
-    border-bottom: 4px solid hsl(169, 12%, 28%);
-    max-width: 300px;
-    margin: 0 auto 1.5em;
-    padding: 3em 0 1em;
+    padding-bottom: .15em;
 }
 
 #projects, #about {
@@ -220,6 +214,38 @@ a .icon:hover {
     margin: 0 auto 2em;
     padding: 0 1.5em;
     line-height: 1.25;
+}
+
+.section-header {
+    font-size: 2.5rem;
+    max-width: 400px;
+    margin: 0 auto 1.5em;
+    padding: 3em 0 1em;
+    position: relative;
+    border-bottom: 4px solid transparent;
+    background-clip: padding-box;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin-bottom: -4px;
+    background: linear-gradient(
+        to right, 
+        var(--bg-color-medium-trans) 0%, 
+        var(--bg-color-medium) 50%, 
+        var(--bg-color-medium-trans) 100%
+        );
+    z-index: -1;
+}
+
+#projects h2 {
+    background-color: white;
+}
+
+#about h2 {
+    background-color: var(--bg-color-dark);
 }
 
 /* Footer Styles */
