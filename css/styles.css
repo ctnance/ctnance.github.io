@@ -209,15 +209,15 @@ a .icon:hover {
   margin: 0 auto 1.5em;
   padding: 3em 0 1em;
   position: relative;
-  border-bottom-width: 4px;
+  border-width: 0 0 4px 0;
   border-bottom-style: solid;
   border-image: linear-gradient(
-      to left,
+      to right,
       var(--bg-color-medium-trans) 0%,
       var(--bg-color-medium) 50%,
       var(--bg-color-medium-trans) 100%
     )
-    100% 0 100% 0;
+    100% 1;
 }
 
 #about {
