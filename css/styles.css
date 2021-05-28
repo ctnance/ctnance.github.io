@@ -164,11 +164,10 @@ a .icon:hover {
 
 #projects,
 #about {
-    padding-bottom: 3em;
+    padding: 0 10vw 3em;
 }
 
 #projects {
-    width: 90vw;
     margin: 0 auto 3em;
 }
 
@@ -210,7 +209,6 @@ a .icon:hover {
     margin: 0 auto 1.5em;
     padding: 3em 0 1em;
     position: relative;
-    border-bottom: 4px solid transparent;
     border-bottom-width: 4px;
     border-bottom-style: solid;
     border-image: linear-gradient(
@@ -242,13 +240,14 @@ a .icon:hover {
     width: 100vw;
     height: 6em;
     border-radius: 50%;
+    border-image: none;
 }
 
 #about p {
     font-size: 1.15rem;
-    max-width: 450px;
+    max-width: 425px;
     margin: 0 auto 2em;
-    padding: 0 1.5em;
+    padding: 0 0.5em;
     line-height: 1.25;
 }
 
