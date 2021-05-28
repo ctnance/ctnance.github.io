@@ -270,6 +270,7 @@ a .icon:hover {
   #projects,
   #about {
     padding: 0;
+    padding-bottom: 3em;
   }
 
   #projects {
