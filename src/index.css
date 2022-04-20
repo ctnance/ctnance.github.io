@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@charset "UTF-8";
+
+/* Variables */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --bg-color-dark: hsl(169, 12%, 10%);
+  --bg-color-medium: hsl(169, 12%, 28%);
+  --bg-color-medium-trans: hsla(169, 12%, 28%, 0);
+  --bg-color-green: hsl(165, 70%, 40%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* CUSTOM CLASS STYLES */
+
+.header {
+  position: fixed;
+  background-color: var(--bg-color-medium);
+  border-bottom: 0.5em solid var(--bg-color-green);
+  box-shadow: 0.25em 0.25em 1em hsla(0, 0%, 10%, 0.5);
+  width: 100%;
+  padding: 0 2em;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+
+.nav--logo {
+  background-color: var(--bg-color-green);
+  color: var(--white);
+  border: 2px solid var(--bg-color-medium);
+  border-radius: 50%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 7px;
+}
+
+.nav--list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav--list-item {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.nav--list-item:last-child {
+  margin-right: 0;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-color-dark);
+  color: white;
+  min-height: 90vh;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 90%, 100% 0%);
+  padding-top: 6em;
+}
+
+.intro--title {
+  font-size: 3rem;
+}
+
+.intro--sub-title {
+  margin-top: 0.8em;
+  margin-bottom: 2em;
+}
+
+#intro p {
+  width: 40vw;
+  max-width: 300px;
+  font-size: 1.25rem;
+  border-bottom: 1px solid hsl(169, 12%, 28%);
+  margin: 0 auto 0.5em;
+}
+
+.intro--social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.intro--social-icon {
+  margin-right: 1em;
+}
+
+/* Gap attribute for flexbox isn't reliable on mobile, so using margin instead */
+.intro--social-icon:last-child {
+  margin-right: 0;
 }
