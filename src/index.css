@@ -7,7 +7,7 @@
   --bg-color-dark: hsl(169, 12%, 10%);
   --bg-color-medium: hsl(169, 12%, 28%);
   --bg-color-medium-trans: hsla(169, 12%, 28%, 0);
-  --bg-color-green: hsl(165, 70%, 40%);
+  --bg-color-green: hsl(165, 100%, 40%);
 }
 
 html {
@@ -144,10 +144,10 @@ img {
 }
 
 /* Gap attribute for flexbox isn't reliable on mobile, so using margin instead */
-.intro--social-icon {
+.intro--social-icons .social-icon {
   margin-right: 1em;
 }
-.intro--social-icon:last-child {
+.intro--social-icons .social-icon:last-child {
   margin-right: 0;
 }
 
@@ -190,7 +190,7 @@ img {
   border-top: 6px solid var(--bg-color-green);
   border-radius: 0.5em;
   box-shadow: 0px 4px 8px hsla(0, 0%, 0%, 0.25);
-  background-color: hsl(0, 0%, 96%);
+  background-color: var(--white);
   margin: 0 auto 2em;
   transition: 0.3s;
 }
@@ -207,4 +207,37 @@ img {
   font-size: 1.25rem;
   margin: 0 auto 0.5em;
   padding: 2px;
+}
+
+.footer {
+  background-color: var(--bg-color-medium);
+  color: var(--white);
+  border-top: 0.5em solid var(--bg-color-green);
+  padding: 4em 2em 3em;
+}
+
+.footer--social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-copyright-notice {
+  margin-top: 1em;
+}
+
+/* SOCIAL ICON STYLES */
+
+.social-icon--link svg {
+  font-size: 2rem;
+}
+
+.intro--social-icons .social-icon,
+.footer--social-icons .social-icon {
+  margin-right: 1em;
+}
+
+/* Gap attribute for flexbox isn't reliable on mobile, so using margin instead */
+.intro--social-icons .social-icon:last-child,
+.footer--social-icons .social-icon:last-child {
+  margin-right: 0;
 }

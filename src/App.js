@@ -1,4 +1,4 @@
-import { Header, IntroSection, ProjectsSection } from "./components/index";
+import { Header, IntroSection, ProjectsSection, Footer } from "./components/index";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
         <IntroSection />
         <ProjectsSection />
       </main>
+      <Footer />
     </>
   );
 }

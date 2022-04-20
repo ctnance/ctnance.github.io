@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "../ProjectCard";
 
-import projectData from "../../projectData";
+import projectData from "../../data/projectData";
 
 function ProjectsSection() {
   const projectCardElements = projectData.map((project) => (
