@@ -9,7 +9,7 @@ function IntroSection() {
       <h1 className="intro--title">Christopher Nance</h1>
       <h2 className="intro--sub-title">Web Developer</h2>
       <div className="intro--get-in-touch">
-        <p>Get in touch</p>
+        <p className="intro--get-in-touch-text">Get in touch</p>
         <div className="intro--social-icons">
           <div className="intro--social-icon">
             <a aria-label="Email" href="mailto:ctnance0@gmail.com">

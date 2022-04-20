@@ -9,18 +9,18 @@ function Header() {
         </a>
         <ul className="nav--list">
           <li className="nav--list-item">
-            <a aria-label="Home" href="#home">
-              Home
+            <a aria-label="Home" href="#intro">
+              <p>Home</p>
             </a>
           </li>
           <li className="nav--list-item">
             <a aria-label="Projects" href="#projects">
-              Projects
+              <p>Projects</p>
             </a>
           </li>
           <li className="nav--list-item">
             <a aria-label="About" href="#about">
-              About
+              <p>About</p>
             </a>
           </li>
         </ul>

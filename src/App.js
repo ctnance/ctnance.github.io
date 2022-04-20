@@ -1,11 +1,12 @@
-import { Header, IntroSection } from "./components/index";
+import { Header, IntroSection, ProjectsSection } from "./components/index";
 
 function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="main">
         <IntroSection />
+        <ProjectsSection />
       </main>
     </>
   );

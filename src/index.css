@@ -3,10 +3,15 @@
 /* Variables */
 :root {
   --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
   --bg-color-dark: hsl(169, 12%, 10%);
   --bg-color-medium: hsl(169, 12%, 28%);
   --bg-color-medium-trans: hsla(169, 12%, 28%, 0);
   --bg-color-green: hsl(165, 70%, 40%);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,12 +40,19 @@ pre {
   margin: 0;
 }
 
-a,
-a:visited,
-a:focus,
-a:active {
+a {
   color: var(--white);
+  font-weight: bold;
+}
+
+a,
+a:link,
+a:visited {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--bg-color-green);
 }
 
 img {
@@ -48,6 +60,11 @@ img {
 }
 
 /* CUSTOM CLASS STYLES */
+
+.header,
+.project-card {
+  user-select: none;
+}
 
 .header {
   position: fixed;
@@ -98,7 +115,7 @@ img {
   flex-direction: column;
   justify-content: center;
   background-color: var(--bg-color-dark);
-  color: white;
+  color: var(--white);
   min-height: 90vh;
   clip-path: polygon(0% 0%, 0% 100%, 100% 90%, 100% 0%);
   padding-top: 6em;
@@ -113,7 +130,7 @@ img {
   margin-bottom: 2em;
 }
 
-#intro p {
+.intro--get-in-touch-text {
   width: 40vw;
   max-width: 300px;
   font-size: 1.25rem;
@@ -126,11 +143,68 @@ img {
   justify-content: center;
 }
 
+/* Gap attribute for flexbox isn't reliable on mobile, so using margin instead */
 .intro--social-icon {
   margin-right: 1em;
 }
-
-/* Gap attribute for flexbox isn't reliable on mobile, so using margin instead */
 .intro--social-icon:last-child {
   margin-right: 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  max-width: 400px;
+  margin: 0 auto 1.5em;
+  padding: 3em 0 1em;
+  position: relative;
+  border-width: 0 0 4px 0;
+  border-bottom-style: solid;
+  border-image: linear-gradient(
+      to right,
+      var(--bg-color-medium-trans) 0%,
+      var(--bg-color-medium) 50%,
+      var(--bg-color-medium-trans) 100%
+    )
+    100% 1;
+}
+
+#projects,
+#about {
+  padding: 0 14vw 3em;
+}
+
+#projects {
+  margin: 0 auto;
+}
+
+.project-card-link {
+  color: var(--black);
+}
+
+.project-card-link:hover {
+  text-decoration: none;
+}
+
+.project-card {
+  background-color: var(--black);
+  border-top: 6px solid var(--bg-color-green);
+  border-radius: 0.5em;
+  box-shadow: 0px 4px 8px hsla(0, 0%, 0%, 0.25);
+  background-color: hsl(0, 0%, 96%);
+  margin: 0 auto 2em;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.3);
+}
+
+.project-card--content {
+  padding: 1em;
+}
+
+.project-card--title {
+  font-size: 1.25rem;
+  margin: 0 auto 0.5em;
+  padding: 2px;
 }
