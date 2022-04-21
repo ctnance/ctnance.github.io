@@ -1,5 +1,21 @@
 export default [
   {
+    project_name: "Typemaster Pre-Launch Landing Page",
+    description: "A mock landing page for Typemaster's pre-launch.",
+    github_url: "https://github.com/ctnance/Typemaster-Pre-Launch-Landing-Page",
+    url: "https://christophernance.dev/Typemaster-Pre-Launch-Landing-Page/",
+    img: "tpllp-h.png",
+    tech_stack: ["HTML", "CSS"],
+  },
+  {
+    project_name: "Pacman JS",
+    description: "Pacman recreated in JavaScript for Web.",
+    github_url: "https://github.com/ctnance/Pacman-JS",
+    url: "https://christophernance.dev/Pacman-JS/",
+    img: "pmjs-w.png",
+    tech_stack: ["HTML", "CSS", "JS"],
+  },
+  {
     project_name: "Reactive Trivia",
     description: "A customizable time-based trivia app.",
     github_url: "https://github.com/ctnance/Reactive-Trivia",

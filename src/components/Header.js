@@ -10,17 +10,17 @@ function Header() {
         <ul className="nav--list">
           <li className="nav--list-item">
             <a aria-label="Home" href="#intro">
-              <p>Home</p>
+              <p className="nav--list-item-text">Home</p>
             </a>
           </li>
           <li className="nav--list-item">
             <a aria-label="Projects" href="#projects">
-              <p>Projects</p>
+              <p className="nav--list-item-text">Projects</p>
             </a>
           </li>
           <li className="nav--list-item">
             <a aria-label="About" href="#about">
-              <p>About</p>
+              <p className="nav--list-item-text">About</p>
             </a>
           </li>
         </ul>

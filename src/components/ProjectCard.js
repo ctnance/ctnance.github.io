@@ -14,7 +14,7 @@ function ProjectCard({ projectData }) {
           </div>
           <div className="project-card--content">
             <h3 className="project-card--title">{projectData.project_name}</h3>
-            <p>{projectData.description}</p>
+            <p className="project-card--description">{projectData.description}</p>
           </div>
         </div>
       </a>
