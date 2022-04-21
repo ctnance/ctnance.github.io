@@ -1,4 +1,10 @@
-import { Header, IntroSection, ProjectsSection, Footer } from "./components/index";
+import {
+  Header,
+  IntroSection,
+  ProjectsSection,
+  AboutSection,
+  Footer,
+} from "./components/index";
 
 function App() {
   return (
@@ -7,6 +13,7 @@ function App() {
       <main className="main">
         <IntroSection />
         <ProjectsSection />
+        <AboutSection />
       </main>
       <Footer />
     </>
