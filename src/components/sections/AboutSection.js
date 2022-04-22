@@ -5,6 +5,11 @@ function AboutSection() {
     <section id="about">
       <h2 className="section-title about--title">About</h2>
       <div className="about--content">
+        <img
+          className="about--profile-img"
+          src="/images/profile-photo.jpg"
+          alt="profile image"
+        />
         <p className="about--paragraph">
           I am a passionate Front End Web Developer. I am always excited to learn
           something new and tackle the next challenge.

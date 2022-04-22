@@ -5,7 +5,7 @@ export default [
     github_url: "https://github.com/ctnance/Typemaster-Pre-Launch-Landing-Page",
     url: "https://christophernance.dev/Typemaster-Pre-Launch-Landing-Page/",
     img: "tpllp-h.png",
-    tech_stack: ["HTML", "CSS"],
+    tech_stack: ["HTML", "SCSS"],
   },
   {
     project_name: "Pacman JS",
