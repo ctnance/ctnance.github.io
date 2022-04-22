@@ -6,7 +6,7 @@ function SocialIcon({ iconData }) {
     <div className="social-icon">
       <a
         className="social-icon--link"
-        aria-label={iconData.aria_label}
+        ariaLabel={iconData.aria_label}
         href={iconData.href}
         target="_blank"
       >
