@@ -13,7 +13,7 @@ export default [
     github_url: "https://github.com/ctnance/Pacman-JS",
     url: "https://christophernance.dev/Pacman-JS/",
     img: "pmjs-w.png",
-    tech_stack: ["HTML", "CSS", "JS"],
+    tech_stack: ["HTML", "CSS", "JavaScript"],
   },
   {
     project_name: "Reactive Trivia",
@@ -21,7 +21,7 @@ export default [
     github_url: "https://github.com/ctnance/Reactive-Trivia",
     url: "https://christophernance.dev/Reactive-Trivia/",
     img: "rt-w.png",
-    tech_stack: ["HTML", "CSS", "React"],
+    tech_stack: ["CSS", "JavaScript", "React"],
   },
   {
     project_name: "GitHub User Search App",
@@ -29,6 +29,6 @@ export default [
     github_url: "https://github.com/ctnance/github-user-search-app",
     url: "https://christophernance.dev/github-user-search-app/",
     img: "ghusa-w.png",
-    tech_stack: ["HTML", "CSS", "React"],
+    tech_stack: ["CSS", "JavaScript", "React"],
   },
 ];
