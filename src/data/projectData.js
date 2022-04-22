@@ -29,6 +29,6 @@ export default [
     github_url: "https://github.com/ctnance/github-user-search-app",
     url: "https://christophernance.dev/github-user-search-app/",
     img: "ghusa-w.png",
-    tech_stack: ["HTML, CSS", "React"],
+    tech_stack: ["HTML", "CSS", "React"],
   },
 ];
